@@ -1,0 +1,234 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.bakery-page {
+  min-height: 100vh;
+  padding: 32px 5%;
+  background: #ffffff;
+  color: #29231f;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eeeeeb;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #98785e;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.heading h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #352920;
+}
+
+.heading > p:last-child {
+  margin: 8px 0 0;
+  color: #88817b;
+  font-size: 13px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.cart-count {
+  color: #50443b;
+  font-size: 13px;
+}
+
+.clear-cart {
+  padding: 9px 13px;
+  border: 1px solid #e7e0d9;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #5d4635;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clear-cart:hover:not(:disabled) {
+  background: #f8f5f1;
+}
+
+.clear-cart:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Section heading */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin: 36px 0 22px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #352920;
+}
+
+.section-heading p {
+  margin: 7px 0 0;
+  color: #89817a;
+  font-size: 13px;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #eeece9;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.product-card:hover {
+  border-color: #d6c5b5;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 0.9;
+  background: #f7f5f2;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.03);
+}
+
+.product-info {
+  flex: 1;
+  padding: 16px;
+}
+
+.product-info h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #352920;
+}
+
+.description {
+  min-height: 34px;
+  margin: 0 0 16px;
+  color: #89817a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.product-price {
+  margin: 0;
+  color: #6b4932;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-footer {
+  padding: 0 16px 16px;
+}
+
+/* Add to Cart */
+.add-button {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #75553d;
+  border-radius: 5px;
+  background: #75553d;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover:not(:disabled) {
+  background: #5c402d;
+}
+
+.add-button:disabled {
+  border-color: #e8e2dc;
+  background: #f4f1ed;
+  color: #806b59;
+  cursor: default;
+}
+
+/* Remove from Cart - hanya beda warna */
+.remove-button {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #e8c5c5;
+  border-radius: 5px;
+  background: #f9e8e8;
+  color: #a34747;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.remove-button:hover:not(:disabled) {
+  background: #f2d6d6;
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 42px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeeb;
+  text-align: center;
+}
+
+.page-footer span {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  color: #4b3426;
+}
+
+.page-footer p {
+  margin: 7px 0 0;
+  color: #89817a;
+  font-size: 11px;
+}
